@@ -8,7 +8,7 @@ import rectangle67 from '../assets/Rectangle 67.svg';
 import rectangle82 from '../assets/Rectangle 82.png';
 import menuIcon from '../assets/hamburguer.svg'; // Imagem do ícone de menu hamburger
 import logo1 from '../assets/logo 1w.png';
-import minhaFoto from '../assets/minha_foto1.png';  
+import minhaFoto from '../assets/minha_foto1.jpg';  
 import minhaFotoMobile from '../assets/minha_foto3.png';
 import emailw from '../assets/emailw.png';
 import linkedinw from '../assets/linkedinw.png';

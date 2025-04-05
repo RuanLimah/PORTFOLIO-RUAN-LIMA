@@ -208,7 +208,7 @@
     display: block; /* Exibir menu hamburger em telas pequenas */
     position: absolute;
     z-index: 1000;
-    margin-right: -15rem;
+    margin-right: -9rem;
     margin-top: -4rem;
   }
 

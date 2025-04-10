@@ -87,6 +87,14 @@
     font-size: 12px;
     margin-top: 1rem;
   }
+
+  .ver-menos-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem; /* Ajuste a altura conforme necessário */
+  }
+  
+  
   
   .explore-btn:hover {
     scale: 1.06;

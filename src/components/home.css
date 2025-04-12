@@ -192,9 +192,23 @@
 
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1440px) {
 
-  
+  .rectangle {
+    height: 41.3rem;
+  }
+
+  .photo-container {
+    top:20rem;
+  }
+
+  .minha-foto1 {
+    height: 4rem;
+  }
+
+ .home-list {
+  gap: 2rem;
+ }
 
 }
 
@@ -285,7 +299,7 @@
     position: absolute; /* Posiciona os ícones no canto inferior direito */
     bottom: 5%; /* Ajusta a posição vertical */
     right: 5%; /* Ajusta a posição horizontal */
-    z-index: 10;
+    z-index:2;
     gap: 1rem;
   }
 

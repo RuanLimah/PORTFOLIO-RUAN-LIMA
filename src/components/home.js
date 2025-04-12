@@ -38,6 +38,14 @@ function Home() {
     return () => clearTimeout(timer);
   }, [indice, apagar, nome]);
 
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.classList.add('body-no-scroll');
+    } else {
+      document.body.classList.remove('body-no-scroll');
+    }
+  }, [menuOpen]);
+
   return (
     <div className="home-container">
       <div className="home-left">

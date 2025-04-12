@@ -259,6 +259,7 @@
   .photo-container {
     position: relative;
     z-index: 1;
+    width:275px;
   }
 
   .minha-foto1 {

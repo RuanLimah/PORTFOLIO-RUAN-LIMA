@@ -222,6 +222,7 @@
     align-items: flex-start; /* Alinhar à esquerda */
     height: 43rem;
     position: relative; /* Adicionado para posicionar elementos filhos */
+    width: 24.4rem;
   }
 
   .home-left {

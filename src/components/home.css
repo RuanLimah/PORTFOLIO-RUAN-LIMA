@@ -293,6 +293,11 @@
     color: white;
   }
 
+  .body-no-scroll {
+    overflow: hidden;
+    height: 100vh;
+  }
+
   .home-icons-mobile {
     display: flex;
     flex-direction: column;

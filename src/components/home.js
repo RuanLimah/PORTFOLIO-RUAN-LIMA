@@ -34,7 +34,7 @@ function Home() {
           setApagar(!apagar);
         }, 1000);
       }
-    }, 350);
+    }, 250);
     return () => clearTimeout(timer);
   }, [indice, apagar, nome]);
 

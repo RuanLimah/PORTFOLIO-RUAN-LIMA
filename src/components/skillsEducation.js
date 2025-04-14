@@ -74,7 +74,7 @@ function SkillsEducation() {
       <div id="education-section" className="education-section">
         <h2 className="section-title">EDUCAÇÃO</h2>
         <p className="description">
-          Sou estudante de Engenharia de Software e busco sempre me especializar por meio de cursos extracurriculares.
+          Faço bacharelado de Engenharia de Software e busco sempre me especializar por meio de cursos extracurriculares.
         </p>
 
         {!isExpanded && (

@@ -1,0 +1,331 @@
+.skills-education-section {
+    background: radial-gradient(circle, #ffffff, #aea8a8);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente ambas as seções */
+    justify-content: center; /* Centraliza verticalmente */
+    min-height: 100vh;
+  }
+  
+  .education-section {
+    color: black;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a seção horizontalmente */
+    justify-content: center; /* Centraliza a seção verticalmente */
+    margin-bottom: 2rem; /* Espaçamento entre a seção de educação e o divisor */
+  }
+  
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    border: 5px solid black;
+    display: inline-block;
+    padding: 20px 50px;
+    width: 15rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: black;
+  }
+  
+  .skills-using {
+    font-size: 24px;
+    width: 100%; /* Garante que a div ocupe toda a largura da seção */
+    display: flex;
+    justify-content: center; /* Alinha o conteúdo à esquerda */
+    margin-right: 21rem; /* Adiciona espaço acima*/
+  }
+  
+  .skills-Learning {
+    font-size: 24px;
+    color: black;
+    margin-right: 28rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+  .learning-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Define 4 colunas para as imagens */
+    gap: 5rem; /* Espaçamento entre os itens */
+  }
+  
+  .skills-others {
+    font-size: 24px;
+    color: black;
+    margin-right: 26rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem; 
+  }
+  
+  .others-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Define 4 colunas para as imagens */
+    gap: 3.5rem; /* Espaçamento entre os itens */
+    margin-bottom: 5rem;
+    margin-right: 1rem;
+  }
+  
+  .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-bottom: 5rem;
+    font-weight: bold montserrant;
+  }
+  
+  .explore-btn {
+    background-color: transparent;
+    font-weight: bold;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 1rem;
+  }
+
+  .ver-menos-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem; /* Ajuste a altura conforme necessário */
+  }
+  
+  
+  
+  .explore-btn:hover {
+    scale: 1.06;
+    transition: 0.5s;
+  }
+  
+  .certificates {
+    margin-top: 20px;
+    display: grid; /* Mudado para grid para melhor layout */
+    grid-template-columns: repeat(4, 1fr); /* 4 certificados por linha */
+    gap: 10px; /* Espaçamento entre os certificados */
+  }
+  
+  .certificates ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .certificates li {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .divider {
+    margin-top: 2rem;
+    width: 100px;
+    margin-bottom: 5rem;
+  }
+  
+  /* Estilo da seção Skills */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    gap: 5rem; /* Diminuição do espaçamento entre os itens */
+    justify-items: center;
+    margin-top: 2rem;
+  }
+  
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .skill-item img {
+    margin-bottom: 2rem;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+  
+  .skill-item p {
+    margin-top: 5px; /* Reduz o espaçamento entre as imagens e o texto */
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Novas regras para certificados */
+  
+  .certificate-title {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .certificates {
+    display: flex;
+    justify-content: center; /* Centraliza o grid horizontalmente */
+    margin-top: 5rem; /* Espaço superior */
+  }
+  
+  .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Mantém 4 colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+    max-width: 1200px; /* Largura máxima do grid */
+    width: 100%; /* Faz o grid ocupar 100% da largura disponível */
+    justify-content: center; /* Centraliza o conteúdo do grid */
+  }
+  
+  .certificate-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo dentro do item */
+    text-align: center;
+    width: 100%; /* Ocupa 100% da largura disponível */
+  }
+  
+  .certificate-item img {
+    width: 100%; /* A imagem vai ocupar 100% da largura do item */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: none; /* Remove qualquer limitação de largura */
+    object-fit: contain; /* Evita que a imagem distorça */
+    cursor: pointer;
+  }
+  
+  .certificate-item img:hover {
+    scale: 1.5;
+  }
+  
+  .services-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens horizontalmente */
+  }
+  
+  .services-row {
+    display: flex;
+    justify-content: center; /* Alinha os itens no centro horizontalmente */
+    gap: 20rem; /* Espaçamento entre os itens */
+    width: 100%; /* Assegura que a linha ocupe a largura total */
+  }
+  
+  .service-item {
+    position: relative; /* Define o contexto de posicionamento para o item do serviço */
+    text-align: center; /* Centraliza o texto dentro do item do serviço */
+    width: 500px; /* Defina uma largura fixa para garantir alinhamento uniforme */
+  }
+  
+  .service-icon {
+    width: 60px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 60px; /* Ajuste o tamanho da imagem conforme necessário */
+    margin: 0; /* Remove margens */
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  }
+  
+  .service-title {
+    position: absolute; /* Permite que o título se sobreponha à imagem */
+    top: 10%; /* Ajuste conforme necessário para centralizar verticalmente */
+    left: 50%; /* Move para o centro horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para o centro */
+    color: black; /* Cor do texto */
+    font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bold; /* Torna o texto em negrito */
+    z-index: 1; /* Coloca o título acima da imagem */
+  }
+  
+  .service-description {
+    margin-top: 30px; /* Ajuste para garantir espaço suficiente abaixo da imagem */
+    text-align: justify; /* Centraliza a descrição */
+  }
+  
+  .centered {
+    margin-top: 20px; /* Espaço acima do item centralizado */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o item verticalmente */
+  }
+  
+  .service-design {
+    margin-right: 6rem;
+  }
+  
+  .service-icon {
+    margin-left: 120px;
+  }
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+
+  /* Certificados - Exibição em duas colunas no mobile */
+  .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas para mobile */
+    gap: 10px; /* Espaçamento entre os certificados */
+    justify-items: center; /* Centraliza as colunas */
+    width: 100%; /* Faz o grid ocupar 100% da largura disponível */
+  }
+
+  /* Skills - Exibição em duas colunas no mobile */
+  .skills-grid, .learning-grid, .others-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas para mobile */
+    gap: 2rem; /* Espaçamento entre os itens */
+    justify-items: center; /* Centraliza os itens no grid */
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  /* Ajuste dos títulos das skills */
+  .skills-using, .skills-Learning, .skills-others {
+    font-size: 18px; /* Ajuste o tamanho da fonte para mobile */
+    text-align: center; /* Centraliza o texto */
+    margin-right: 0; /* Remove margens para centralizar no mobile */
+    margin-bottom: 2rem; /* Adiciona espaço entre os títulos e os itens */
+  }
+
+  /* Serviços - Exibição em coluna no mobile */
+  .services-row {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna no mobile */
+    align-items: center; /* Centraliza os itens na coluna */
+    gap: 2rem; /* Espaçamento entre os itens */
+  }
+
+  .service-item {
+    width: 100%; /* Faz os itens ocuparem toda a largura da tela */
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .service-icon {
+    margin-left: 5rem;
+    
+    width: 80px; /* Ajusta o tamanho do ícone no mobile */
+    height: 80px;
+  }
+
+  .service-title {
+    font-size: 20px; /* Ajusta o tamanho da fonte para mobile */
+    top: 20%; /* Centraliza o título em relação ao ícone */
+  }
+
+  .service-title.manuntecao {
+    font-size: 20px; /* Ajusta o tamanho da fonte para mobile */
+    top: 25%; /* Centraliza o título em relação ao ícone */
+    margin-bottom: 1rem;
+  }
+
+
+  .service-description {
+    font-size: 14px; /* Ajusta o tamanho da descrição para mobile */
+    margin: 1rem  0.7rem;
+    text-align: justify; /* Centraliza o texto no mobile */
+  }
+
+  /* Ajuste de padding e centralização de textos nas skills */
+  .skill-item p {
+    font-size: 16px; /* Aumenta o tamanho da fonte no mobile */
+    text-align: center; /* Centraliza o texto */
+  }
+}

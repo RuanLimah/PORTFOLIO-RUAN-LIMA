@@ -1,13 +1,10 @@
 .home-container {
   display: flex;
-  width: 100%;
+  flex: 1;
   height: 87.6vh;
-  align-items: flex-start;
-  justify-content: space-between;
   background-color: #f2f2f2;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .home-left {
@@ -195,7 +192,7 @@
 @media (min-width: 768px) and (max-width: 1440px) {
 
   .rectangle {
-    height: 41.3rem;
+    height: 41.6rem;
   }
 
   .photo-container {
@@ -222,7 +219,7 @@
     align-items: flex-start; /* Alinhar à esquerda */
     height: 43rem;
     position: relative; /* Adicionado para posicionar elementos filhos */
-    width: 24.4rem;
+    flex: 1;
   }
 
   .home-left {
@@ -230,6 +227,8 @@
     padding: 0;
     margin-top: 3rem;
   }
+
+  
 
   .home-logo {
     display: none;

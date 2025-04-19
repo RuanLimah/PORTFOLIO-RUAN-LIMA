@@ -332,7 +332,6 @@
     bottom: 0;
     padding: 2rem;
     z-index: 999;
-    margin-top: -14rem !important;
   }
 
   .home-list.active {

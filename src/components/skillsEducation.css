@@ -193,7 +193,7 @@
   }
 
   .certificate-item img {
-    transition: transform 1s ease;
+    transition: transform 0.6s ease;
   }
   
   .certificate-item img:hover {
@@ -303,12 +303,12 @@
   }
 
   .certificate-item img {
-    transition: transform 1s ease;
+    transition: transform 0.6s ease;
     max-width: 100%;
   }
   
   .certificate-item img:hover {
-    transform: scale(1.1);
+    transform: scale(1.3);
   }
   
 

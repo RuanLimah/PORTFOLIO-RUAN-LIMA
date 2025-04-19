@@ -260,7 +260,7 @@
   /* Certificados - Exibição em duas colunas no mobile */
   .certificates-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas para mobile */
+    grid-template-columns: repeat(1, 1fr); /* 2 colunas para mobile */
     gap: 10px; /* Espaçamento entre os certificados */
     justify-items: center; /* Centraliza as colunas */
     width: 100%; /* Faz o grid ocupar 100% da largura disponível */

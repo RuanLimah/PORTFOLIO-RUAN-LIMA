@@ -270,7 +270,8 @@
     display: block;
     height: 41rem;
     margin-top: -1rem;
-    flex: 1;
+    margin-left: 9rem;
+    width: 100%;
   }
 
   .home-text {

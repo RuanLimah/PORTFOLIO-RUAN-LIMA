@@ -191,9 +191,13 @@
     object-fit: contain; /* Evita que a imagem distorça */
     cursor: pointer;
   }
+
+  .certificate-item img {
+    transition: transform 1s ease;
+  }
   
   .certificate-item img:hover {
-    scale: 1.5;
+    transform: scale(1.5);
   }
   
   .services-section {
@@ -278,7 +282,7 @@
 
   /* Ajuste dos títulos das skills */
   .skills-using, .skills-Learning, .skills-others {
-    font-size: 18px; /* Ajuste o tamanho da fonte para mobile */
+    font-size: 18px; /* Ajusta o tamanho da fonte para mobile */
     text-align: center; /* Centraliza o texto */
     margin-right: 0; /* Remove margens para centralizar no mobile */
     margin-bottom: 2rem; /* Adiciona espaço entre os títulos e os itens */
@@ -297,6 +301,16 @@
     text-align: center;
     margin-bottom: 1rem;
   }
+
+  .certificate-item img {
+    transition: transform 1s ease;
+    max-width: 100%;
+  }
+  
+  .certificate-item img:hover {
+    transform: scale(0.75);
+  }
+  
 
   .service-icon {
     margin-left: 5rem;

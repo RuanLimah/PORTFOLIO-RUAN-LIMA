@@ -211,6 +211,8 @@
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
+
+
   .home-container {
     background-color: black; /* Mudar o fundo para preto */
     display: flex;
@@ -221,6 +223,8 @@
     position: relative; /* Adicionado para posicionar elementos filhos */
     flex: 1;
   }
+
+
 
   .home-left {
     height: auto;
@@ -264,9 +268,9 @@
 
   .minha-foto1 {
     display: block;
-    height: 43rem;
-    margin-top: -3rem;
-    margin-right: -13.8rem;
+    height: 41rem;
+    margin-top: -1rem;
+    flex: 1;
   }
 
   .home-text {

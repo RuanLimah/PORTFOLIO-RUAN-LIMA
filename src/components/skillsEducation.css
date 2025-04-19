@@ -308,7 +308,7 @@
   }
   
   .certificate-item img:hover {
-    transform: scale(0.75);
+    transform: scale(1.1);
   }
   
 

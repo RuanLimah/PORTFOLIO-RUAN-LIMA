@@ -6,7 +6,7 @@ import linkedin from '../assets/icon-linkedin.png';
 import github from '../assets/icon-github.png';
 import rectangle67 from '../assets/Rectangle 67.svg';
 import rectangle82 from '../assets/Rectangle 82.png';
-import menuIcon from '../assets/hamburguer.svg'; // Imagem do ícone de menu hamburger
+import menuIcon from '../assets/hamburguer.svg';
 import logo1 from '../assets/logo 1w.png';
 import minhaFoto from '../assets/minha_foto1.jpg';  
 import minhaFotoMobile from '../assets/minha_foto3.png';
@@ -19,7 +19,7 @@ function Home() {
   const [texto, setTexto] = useState("");
   const [indice, setIndice] = useState(0);
   const [apagar, setApagar] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false); // Estado para controlar se o menu está aberto ou fechado
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -30,7 +30,7 @@ function Home() {
         setTexto(prev => prev.slice(0, -1));
         setIndice(indice - 1);
       } else {
-        setTimeout(() => {  
+        setTimeout(() => {
           setApagar(!apagar);
         }, 1000);
       }
@@ -48,6 +48,18 @@ function Home() {
 
   return (
     <div className="home-container">
+      
+      {/* Cabeçalho para Mobile */}
+      <div className="home-header-container">
+        <img src={logo1} alt="logo" className="home-logo1" />
+        <img
+          src={menuIcon}
+          alt="Menu Icon"
+          className="menu-icon"
+          onClick={() => setMenuOpen(!menuOpen)}
+        />
+      </div>
+
       <div className="home-left">
         <img src={logo} alt="Logo" className="home-logo" />
         <img src={logo1} alt='logo' className='home-logo1'/>
@@ -79,16 +91,9 @@ function Home() {
           </a>
         </div>
       </div>
+
       <div className="home-right">
         <nav className="home-nav">
-          {/* Ícone de menu hamburger para dispositivos móveis */}
-          <img
-            src={menuIcon}
-            alt="Menu Icon"
-            className="menu-icon"
-            onClick={() => setMenuOpen(!menuOpen)} // Toggle menu ao clicar
-          />
-          {/* Menu de navegação (mostrado/oculto com base no estado menuOpen) */}
           <ul className={`home-list ${menuOpen ? 'active' : ''}`}>
             <li className="home-item">
               <a href="#sobre-mim" onClick={(e) => {

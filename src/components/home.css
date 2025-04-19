@@ -250,8 +250,7 @@
     display: block; /* Exibir menu hamburger em telas pequenas */
     position: absolute;
     z-index: 1000;
-    margin-right: -8rem;
-    margin-top: -4rem;
+    margin-top: 0.2rem;
   }
 
   .rectangle,

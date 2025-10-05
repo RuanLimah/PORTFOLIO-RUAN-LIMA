@@ -6,7 +6,6 @@ import linkedin from '../assets/icon-linkedin.png';
 import github from '../assets/icon-github.png';
 import rectangle67 from '../assets/Rectangle 67.svg';
 import rectangle82 from '../assets/Rectangle 82.png';
-import menuIcon from '../assets/hamburguer.svg';
 import logo1 from '../assets/logo 1w.png';
 import minhaFoto from '../assets/minha_foto1.jpg';  
 import minhaFotoMobile from '../assets/minha_foto3.png';
@@ -30,9 +29,7 @@ function Home() {
         setTexto(prev => prev.slice(0, -1));
         setIndice(indice - 1);
       } else {
-        setTimeout(() => {
-          setApagar(!apagar);
-        }, 1000);
+        setTimeout(() => setApagar(!apagar), 1000);
       }
     }, 250);
     return () => clearTimeout(timer);
@@ -48,21 +45,23 @@ function Home() {
 
   return (
     <div className="home-container">
-      
-      {/* Cabeçalho para Mobile */}
+
+      {/* Cabeçalho Mobile */}
       <div className="home-header-container">
         <img src={logo1} alt="logo" className="home-logo1" />
-        <img
-          src={menuIcon}
-          alt="Menu Icon"
-          className="menu-icon"
+        <div 
+          className={`menu-icon ${menuOpen ? 'open' : ''}`} 
           onClick={() => setMenuOpen(!menuOpen)}
-        />
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
 
+      {/* Home Left */}
       <div className="home-left">
         <img src={logo} alt="Logo" className="home-logo" />
-        <img src={logo1} alt='logo' className='home-logo1'/>
         <div className="home-text">
           <p className='home-welcome'>Olá, eu sou o</p>
           <h1 className='home-name'>{texto || "\u00A0"}</h1>
@@ -79,6 +78,7 @@ function Home() {
             </a>
           </div>
         </div>
+
         <div className="home-icons-mobile">
           <a href="mailto:ruanlimah@hotmail.com" target="_blank" rel="noopener noreferrer">
             <img src={emailw} alt="Email" className="icon1" />
@@ -92,6 +92,7 @@ function Home() {
         </div>
       </div>
 
+      {/* Home Right */}
       <div className="home-right">
         <nav className="home-nav">
           <ul className={`home-list ${menuOpen ? 'active' : ''}`}>
@@ -99,7 +100,7 @@ function Home() {
               <a href="#sobre-mim" onClick={(e) => {
                 e.preventDefault();
                 document.querySelector('#sobre-mim').scrollIntoView({ behavior: 'smooth' });
-                setMenuOpen(false); 
+                setMenuOpen(false);
               }}>Sobre Mim</a>
             </li>
             <li className="home-item">
@@ -116,34 +117,34 @@ function Home() {
               <a href="#section-skills" onClick={(e) => {
                 e.preventDefault();
                 document.querySelector('#section-skills').scrollIntoView({ behavior: 'smooth' });
-                setMenuOpen(false); 
+                setMenuOpen(false);
               }}>Skills</a>
             </li>
             <li className="home-item">
               <a href="#section-portfolio" onClick={(e) => {
                 e.preventDefault();
                 document.querySelector('#section-portfolio').scrollIntoView({ behavior: 'smooth' });
-                setMenuOpen(false); 
+                setMenuOpen(false);
               }}>Portfólio</a>
             </li>
             <li className="home-item contact">
               <a href="#contate-me" onClick={(e) => {
                 e.preventDefault();
                 document.querySelector('#contate-me').scrollIntoView({ behavior: 'smooth' });
-                setMenuOpen(false); 
+                setMenuOpen(false);
               }}>Contate-me</a>
             </li>
           </ul>
         </nav>
-        <div className="home-right">
-          <img src={rectangle67} alt="Rectangle" className="rectangle" />
-          <img src={rectangle82} alt="Rectangle" className="rectangle82" />
-          <div className="photo-container">
-            <img src={minhaFoto} alt="minha foto" className="minha-foto" />
-            <img src={minhaFotoMobile} alt="minha foto" className="minha-foto1" />
-          </div>
+
+        <img src={rectangle67} alt="Rectangle" className="rectangle" />
+        <img src={rectangle82} alt="Rectangle" className="rectangle82" />
+        <div className="photo-container">
+          <img src={minhaFoto} alt="minha foto" className="minha-foto" />
+          <img src={minhaFotoMobile} alt="minha foto" className="minha-foto1" />
         </div>
       </div>
+
     </div>
   );
 }

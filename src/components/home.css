@@ -1,3 +1,12 @@
+/* ===== Geral ===== */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Home Container ===== */
 .home-container {
   display: flex;
   flex: 1;
@@ -7,6 +16,7 @@
   padding: 0;
 }
 
+/* ===== Home Left ===== */
 .home-left {
   display: flex;
   flex-direction: column;
@@ -39,10 +49,6 @@
   font-weight: bold;
 }
 
-.home-introduction {
-  position: relative;
-}
-
 .home-text h1 {
   display: flex;
   flex-direction: column;
@@ -60,6 +66,7 @@
   margin-left: 3rem;
 }
 
+/* ===== Ícones ===== */
 .home-icons {
   display: flex;
   gap: 3rem;
@@ -81,6 +88,7 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* ===== Home Right ===== */
 .home-right {
   display: flex;
   flex-direction: column;
@@ -102,6 +110,7 @@
   position: relative;
 }
 
+/* ===== Navegação ===== */
 .home-nav {
   position: absolute;
   top: 20px;
@@ -141,6 +150,7 @@
   color: #000;
 }
 
+/* ===== Fotos ===== */
 .photo-container {
   position: absolute;
   top: 50%;
@@ -151,19 +161,45 @@
 
 .minha-foto {
   object-fit: cover;
-  margin-left: -15rem;
   margin-top: 5.5rem;
 }
 
+/* ===== Menu Hamburger ===== */
 .menu-icon {
-  display: none; /* Por padrão, escondido em telas grandes */
+  display: none;
+  width: 30px;
+  height: 22px;
+  flex-direction: column;
+  justify-content: space-between;
   cursor: pointer;
   position: absolute;
   top: 20px;
-  right: 20px; /* Mantido no canto superior direito */
-  z-index: 3; /* Maior z-index para que fique acima de outros elementos */
+  right: 20px;
+  z-index: 1000;
 }
 
+.menu-icon span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.menu-icon.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ===== Elementos Mobile Ocultos ===== */
 .home-logo1,
 .rectangle82,
 .home-icons-mobile,
@@ -171,8 +207,7 @@
   display: none;
 }
 
-
-
+/* ===== Desktop Muito Grande ===== */
 @media (min-width: 1800px) { 
   .rectangle{
     width: 70rem;
@@ -186,53 +221,46 @@
   .home-list {
     gap: 8rem;
   }
-
 }
 
+/* ===== Tablets / Laptops ===== */
 @media (min-width: 768px) and (max-width: 1440px) {
-
   .rectangle {
     height: 41.6rem;
   }
 
   .photo-container {
-    top:20rem;
+    top: 20rem;
   }
 
   .minha-foto1 {
     height: 4rem;
   }
 
- .home-list {
-  gap: 2rem;
- }
-
+  .home-list {
+    gap: 2rem;
+  }
 }
 
-/* Estilos para dispositivos móveis */
+/* ===== Mobile ===== */
 @media (max-width: 768px) {
-
-
   .home-container {
-    background-color: black; /* Mudar o fundo para preto */
+    background-color: black;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Mudar para flex-start para alinhar ao topo */
-    align-items: flex-start; /* Alinhar à esquerda */
-    height: 43rem;
-    position: relative; /* Adicionado para posicionar elementos filhos */
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    height: 42rem;
     flex: 1;
+    padding-bottom: 3rem;
   }
-
-
 
   .home-left {
     height: auto;
     padding: 0;
     margin-top: 3rem;
   }
-
-  
 
   .home-logo {
     display: none;
@@ -247,39 +275,35 @@
   }
 
   .menu-icon {
-    display: block; /* Exibir menu hamburger em telas pequenas */
-    position: absolute;
-    z-index: 1000;
-    margin-top: 0.2rem;
+    display: flex;
   }
 
   .rectangle,
   .home-icons,
   .minha-foto {
-    display: none; /* Esconder itens não essenciais */
+    display: none;
   }
 
   .photo-container {
     position: relative;
     z-index: 1;
-    width:275px;
+    top: 21.5rem;
   }
 
   .minha-foto1 {
     display: block;
-    height: 41rem;
-    margin-top: -1rem;
-    margin-left: 7rem;
-    width: 118%;
+    position: relative;
+    height:35rem;
+    width: 140%;
   }
 
   .home-text {
-    position: absolute; /* Posiciona o texto no canto inferior esquerdo */
-    bottom: 1%; /* Ajusta a posição vertical */
-    right: 1%; /* Ajusta a posição horizontal */
-    color: white; /* Altera a cor do texto */
-    z-index: 2; /* Garante que fique acima da foto */
-    text-align: left; /* Alinha o texto à esquerda */
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    color: white;
+    z-index: 2;
+    text-align: left;
     width: 90%;
   }
 
@@ -306,41 +330,36 @@
   .home-icons-mobile {
     display: flex;
     flex-direction: column;
-    position: absolute; /* Posiciona os ícones no canto inferior direito */
-    bottom: 5%; /* Ajusta a posição vertical */
-    right: 5%; /* Ajusta a posição horizontal */
-    z-index:2;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    z-index: 2;
     gap: 1rem;
   }
 
-  .icons1 {
-    display: flex;
-    flex-direction: column;
-  }
-
   .home-list {
-    display: none; /* Escondido por padrão */
-    flex-direction: column; /* Colocar itens em coluna */
+    display: none;
+    flex-direction: column;
     gap: 2rem;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.9); /* Fundo semi-transparente */
-    position: fixed; /* Fazer o menu ocupar a tela inteira */
+    background-color: rgba(0,0,0,0.95);
+    position: fixed;
     top:0;
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 2rem;
+    padding: 3rem;
     z-index: 999;
+    transition: all 0.3s ease;
   }
 
   .home-list.active {
-    display: flex; /* Exibir o menu quando ativo */
+    display: flex;
   }
 
-
   .home-item a {
-    font-size: 24px; /* Aumentar o tamanho da fonte */
+    font-size: 24px;
     color: white;
     text-decoration: none;
   }
@@ -349,6 +368,6 @@
     font-weight: bold;
     padding: 10px 20px;
     border: 2px solid #fff;
+    border-radius: 20px;
   }
-
 }

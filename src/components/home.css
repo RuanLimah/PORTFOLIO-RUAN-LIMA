@@ -242,17 +242,6 @@ body, html {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  html, body {
-    color-scheme: light !important;
-    background-color: #fff !important;
-    color: #000 !important;
-  }
-
-  img, svg, video, canvas {
-    filter: none !important;
-  }
-}
 
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
@@ -317,7 +306,7 @@ body, html {
     color: white;
     z-index: 2;
     text-align: left;
-    width: 90%;
+    width: 75%;
   }
 
   .home-welcome {

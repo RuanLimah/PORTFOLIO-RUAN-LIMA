@@ -242,8 +242,21 @@ body, html {
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  html, body {
+    color-scheme: light !important;
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+
+  img, svg, video, canvas {
+    filter: none !important;
+  }
+}
+
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
+  
   .home-container {
     background-color: black;
     display: flex;

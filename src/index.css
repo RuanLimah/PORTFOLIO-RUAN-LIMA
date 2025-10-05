@@ -6,11 +6,7 @@ body {
     color: #333;
   }
 
-  html, body {
-  color-scheme: light !important;
-  background-color: #000 !important;
-  color: #fff !important;
-}
+
   
   a {
     text-decoration: none;

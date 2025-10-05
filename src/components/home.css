@@ -301,12 +301,13 @@ body, html {
 
   .home-text {
     position: absolute;
-    bottom: 1%;
-    right: 1%;
+    bottom: 0.5%;
+    right: 0.5%;
     color: white;
     z-index: 2;
     text-align: left;
-    width: 75%;
+    width: 90%;
+    height: 15.5%;
   }
 
   .home-welcome {

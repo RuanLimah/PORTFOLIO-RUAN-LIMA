@@ -5,6 +5,12 @@ body {
     background-color: #f4f4f4;
     color: #333;
   }
+
+  html, body {
+  color-scheme: light !important;
+  background-color: #000 !important;
+  color: #fff !important;
+}
   
   a {
     text-decoration: none;
